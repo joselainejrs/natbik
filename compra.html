@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>NatBik</title>
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="
+    color: #9747FF;" href="bicicleta.html">
+                        Bicicletas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="padronizacao-pagina">
+        <a class="btn btn-link paragrafo-destaque mt-5 mb-5" aria-current="page" href="bicicleta.html">
+            Voltar
+        </a>
+        <div class="info-compra d-flex justify-content-center mt-5">
+            <div class="card card-shop me-5" style="width: 18rem; background-color: #EBEDEE; border: none;">
+                <i class="bi bi-heart icone-favorito ms-4 mt-4"></i>
+                <img src="img/bickes/b-shop.png" class="card-img-top" alt="..." style="margin-top:44px;">
+            </div>
+            <div class="ms-5">
+                <p class="produto">Bicicleta Aro 29</p>
+                <p class="paragrafo">KRW Alumínio 24 Vel Freio a Disco X52 - Grafite + Preto</p>
+                <div class="text-end valores">
+                    <p class="descrição"><s>R$ 1.899,00</s></p>
+                    <p class="paragrafo-destaque">R$ 804,00</p>
+                    <p class="descrição">até 10x de R$ 80,40 sem juros</p>
+                </div>
+                <div class="mb-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        <i class="bi bi-credit-card-2-back icone-shop icone-compra ms-2"></i>
+                        Compre agora
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal-add"
+                        data-bs-target="#addcarrinho">
+                        <i class="bi bi-cart icone-shop icone-compra ms-2"></i>
+                        Adicionar
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="accordion mt-5 mb-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button produto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                        style="background: #EBEDEE;">
+                        Descrição
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="paragrafo-destaque">
+                            A bicicleta KRW X52 foi desenvolvida para quem quer realizar um passeio e pegar trilhas
+                            leves. Com seu quadro em alumínio 6061, fornece segurança e leveza no seu pedal. Possuí
+                            diversas cores que garante um estilo próprio para você. Quadro em alumínio 6061. Abraçadeira
+                            alumínio de selim 31,8mm. Alavancas EZ-fire. Aro aéro 29 pared dupla. Caixa de direção
+                            semi-integrado. Câmbio dianteiro importado. Cambio traseiro importado. Pedivela triplo
+                            preto. Canote de selim 27.2mm com carrinho
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal de confirmação</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    Compra realizada com sucesso
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal adicionar  -->
+    <div class="modal-add fade" id="addcarrinho" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal de Adicionar</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal-add" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    Compra realizada com sucesso
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

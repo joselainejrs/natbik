@@ -1,0 +1,22 @@
+.subtitulo{
+    color: #374957;
+    font-family: "Itim", cursive;
+}
+
+.paragrafo{
+    font-weight: 200;
+    color: #374957;
+    font-family: "Dosis", sans-serif;
+}
+
+.texto{
+    font-weight: 300;
+    color: #374957;
+    font-family: "Dosis", sans-serif;
+}
+
+.paragrafo-destaque{
+    font-weight: 500;
+    color: #374957 !important;
+    font-family: "Dosis", sans-serif !important;
+}
