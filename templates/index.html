@@ -77,30 +77,13 @@
             <p class="fs-2 text-center subtitulo mb-5 mt-5">benefícios de andar de bicicleta</p>
 
             <div class="conj-card-beneficios d-flex justify-content-between">
-                {% for card_beneficios in cards_beneficios}
+                {% for card_beneficios in cards_beneficios %}
                 <div class="card " style="width: 18rem;">
                     <img src="{{card_beneficios.img}}" class="card-img-top rounded" alt="...">
                     <div class="card-body">
                         <p class="card-text paragrafo">{{card_beneficios.comentario}}</p>
                     </div>
                 </div> 
-
-
-                <div class="card " style="width: 18rem;">
-                    <img src="img/img 5.png" class="card-img-top rounded" alt="...">
-                    <div class="card-body">
-                        <p class="card-text paragrafo">O ganho de massa muscular melhora a capacidade física e a coordenação motora devido a maior força, equilíbrio e resistência. Quem adota a prática para a vida, pode evitar (ou retardar) a ocorrência de sarcopenia “perda da força e massa muscular que ocorre na terceira idade e comasdoenças crônicas”.</p>
-                    </div>
-                </div>
-
-                <div class="card " style="width: 18rem;">
-                    <img src="img/img 4.png" class="card-img-top rounded" alt="...">
-                    <div class="card-body">
-                        <p class="card-text paragrafo">Com a melhora na resistência cardiorrespiratória há menossensação de
-                            cansaço, menos preguiça, redução de sintomas como a falta de ar e a fadiga. Além disso, a prática também pode reduzir dores corporais e melhorar a funcionalidade geral.</p>
-                    </div>
-                </div>
-
             </div>
             {% endfor %}
         </section>
