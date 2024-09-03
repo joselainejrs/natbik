@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/home">
+                    <a class="nav-link active" aria-current="page" href="/home">
                         Home
                     </a>
                 </li>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/login">
+                    <a class="nav-link" href="/login">
                         Login
                     </a>
                 </li>
@@ -48,45 +48,32 @@
     </nav>
 
     <div class="login padronizacao-pagina">
-        <p class="fs-2 text-center subtitulo mb-5 mt-5">Login</p>
-        <p class="text-center paragrafo-destaque">
-            <i class="bi bi-google"></i>
-            Google
-        </p>
 
-        <p class="text-center paragrafo-destaque">-------------------- ou -------------------</p>
+        <a class="btn btn-link paragrafo-destaque mt-5 mb-5" aria-current="page" href="/home">
+            Voltar
+        </a>
 
-        <form class="mt-4" action="/acesso" method="post">
+        <p class="fs-2 text-center subtitulo mb-5 mt-5">Cadastrar Comentarios</p>
+
+        <form class="mt-4" action="/criar_comentarios" method="post" enctype="multipart/form-data">
             <fieldset>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label paragrafo-destaque">E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email"
-                        placeholder="name@example.com">
+                    <label for="exampleFormControlInput1" class="form-label paragrafo-destaque">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome">
+                </div>,
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label paragrafo-destaque">Descricao</label>
+                    <textarea class="form-control" id="descricao" name="descricao"
+                        placeholder="..."></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label paragrafo-destaque">Senha</label>
-                    <input type="password" class="form-control" id="senha" name="senha"
-                        placeholder="*****">
-                </div>
-                <div class="d-flex ">
-                    <div class="form-check me-3">
-                        <input class="form-check-input" type="checkbox" name="tipo" value="Professor" id="tipoprofessor">
-                        <label class="form-check-label" for="tipoprofessor">
-                            Professor
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="tipo" value="Estudante" id="tipoestudante" checked>
-                        <label class="form-check-label" for="tipoestudante">
-                            Estudante
-                        </label>
-                    </div>
-                </div>
+                    <input type="file" class="form-control" id="img" name="file">
+                </div>,
                
                 <button type="submit" class="btn btn-primary mt-4">
-                    Entrar
+                    Cadastrar
                 </button>
-                <p class="text-end texto">Ainda não tem cadastro ?</p>
             </fieldset>
         </form>
 

@@ -1,30 +1,29 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .padronizacao-pagina {
-    width: 1200px;
+    width: 80%;
     margin: 0 auto;
 }
 
 .navbar {
-    height: 60px;
     font-family: "Itim", cursive;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 
-.icone-favorito{
+.icone-favorito {
     color: #9747FF;
 }
 
 
 .icone-star {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .icone-favorito {
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
-.icone-compra{
+.icone-compra {
     color: #fff !important;
 }
 
@@ -32,37 +31,36 @@
 
 .btn-primary,
 .btn-secondary {
-    width: 400px;
-    height: 50px;
+    width: 100% !important;
+    height: 50px !important;
     color: #fff;
-    font-size: 18px !important;
+    font-size: 1.2rem !important;
     font-family: "Dosis", sans-serif !important;
 }
 
-.btn-primary{
- background-color: #9747FF !important;
- 
+.btn-primary {
+    background-color: #9747FF !important;
 }
 
 .btn-secondary {
     background-color: #5B2B99 !important;
 }
 
-.btn-primary:hover{
- background-color: #5B2B99 !important;
+.btn-primary:hover {
+    background-color: #5B2B99 !important;
 }
 
 .btn-secondary:hover {
     background-color: #351959 !important;
 }
 
-.btn-link{
-    font-size: 24px !important;
+.btn-link {
+    font-size: 1.5rem !important;
 }
 
 .btn-comprar {
-    width: 16rem;
-    height: 2.5rem;
+    width: 13em !important;
+    height: 45px !important;
     border: none !important;
     background-color: #9747FF !important;
     font-family: "Itim", cursive !important;
@@ -70,38 +68,31 @@
 }
 
 
-.btn-comprar:hover{
- background-color: #9747FF !important;
+.btn-comprar:hover {
+    background-color: #9747FF !important;
 }
 
 /* campo dos beneficios e comentarios */
 
-
-
-.img-comentarios {
-    width: 50px;
-    height: 50px;
-}
-
 /* shoppin */
 .produto {
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Itim", cursive !important;
 }
 
 .descrição {
     color: #442073;
-    font-size: 20px;
+    font-size: 1.8rem;
     font-weight: 300 !important;
     font-family: "Dosis", sans-serif;
 }
 
 .valores .paragrafo-destaque {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #9747FF;
 }
 
-form{
+form {
     width: 400px;
     margin: 0 auto;
 }

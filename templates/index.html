@@ -29,8 +29,7 @@
         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" style="
-    color: #9747FF;" aria-current="page" href="/home">
+                    <a class="nav-link active" aria-current="page" href="/home">
                         Home
                     </a>
                 </li>
@@ -76,33 +75,35 @@
         <section class="card-beneficio">
             <p class="fs-2 text-center subtitulo mb-5 mt-5">benefícios de andar de bicicleta</p>
 
-            <div class="conj-card-beneficios d-flex justify-content-between">
+            <div class=" d-flex justify-content-between">
                 {% for card_beneficios in cards_beneficios %}
-                <div class="card " style="width: 18rem;">
-                    <img src="{{card_beneficios.img}}" class="card-img-top rounded" alt="...">
-                    <div class="card-body">
-                        <p class="card-text paragrafo">{{card_beneficios.comentario}}</p>
-                    </div>
-                </div> 
+                <div class="conj-card-beneficios">
+                    <div class="card " style="width: 18rem;">
+                        <img src="../static/imagens/beneficios/{{card_beneficios.file}}" class="card-img-top rounded" alt="...">
+                        <div class="card-body">
+                            <p class="card-text paragrafo">{{card_beneficios.comentario}}</p>
+                        </div>
+                    </div> 
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+            
         </section>
 
 
         <section class="comentarios">
             <p class="fs-2 text-center subtitulo mb-5 mt-5">Feedback dos atletas</p>
 
-            <div class="conj-comentarios d-flex justify-content-between mb-5">
+            <a class="btn btn-link paragrafo-destaque mt-5 mb-5" aria-current="page" href="/comentarios">
+                "Deixe seu comentario"
+            </a>
+
+            <div class="conj-comentarios container justify-content-center row mb-5">
                 {% for lista in lista_comentarios %}
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body d-flex p-2" style="background-color: #F5EDFF;">
+                <div class="card me-4 mb-4" style="width: 18rem; background-color: #F5EDFF;">
+                    <div class="card-body d-flex p-2 me-3">
                         <div class="card-inline">
-                            <img src="{{lista.imagem}}" class="rounded img-comentarios me-3" alt="...">
-                            <div class="d-flex justify-content-between mt-3" style="width: 3rem;">
-                                <i class="bi bi-star icone-star"></i>
-                                <i class="bi bi-star icone-star"></i>
-                                <i class="bi bi-star icone-star"></i>
-                            </div>
+                            <img src="../static/imagens/comentarios/{{lista.filename}}" class="rounded img-comentarios me-3" alt="..." style="width: 2em;">
                         </div>
                         <div>
                             <p class="card-text paragrafo-destaque">{{lista.nome}}</p>
